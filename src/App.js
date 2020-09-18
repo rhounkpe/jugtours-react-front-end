@@ -13,7 +13,7 @@ class App extends Component {
     }
 
     async componentDidMount() {
-        const response = await fetch('http://localhost:8080/api/groups');
+        const response = await fetch('/api/groups');
         const body = await response.json();
         this.setState({
             groups: body,
